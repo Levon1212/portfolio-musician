@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Musician</title>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+</head>
+<body>
+    <header class="home-header">
+        <button class="settings-button" aria-label="settings button"></button>
+        <section class="header-slider">
+            <section class="slider">
+                <div>
+                    <div class="slider-item">
+                        <img src="assets/images/slider-image-1.png"
+                             class="slider-image"
+                             alt="Wiz Khalifa">
+                        <div class="cover"></div>
+                        <div class="slider-content-wrapper">
+                            <h3>HELLO! I AM A POP MUSICIAN</h3>
+                            <h1>WIZ KHALIFA</h1>
+                            <p>
+                                Morbi sit amet eros massa. Vestibulum diggrissim varius dictum.
+                                Nunc vehicula sed est vitae elementum. Quisque vitae metus sit amet orci
+                                portitor pellentesque.
+                            </p>
+                            <button class="slider-play-button" aria-label="play-button">PLAY</button>
+                        </div>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider-item">
+                        <img src="assets/images/slider-image-2.jpeg"
+                             class="slider-image"
+                             alt="Wiz Khalifa">
+                        <div class="slider-content-wrapper">
+                            <h3>HELLO! I AM A POP MUSICIAN</h3>
+                            <h1>WIZ KHALIFA</h1>
+                            <p>
+                                Morbi sit amet eros massa. Vestibulum diggrissim varius dictum.
+                                Nunc vehicula sed est vitae elementum. Quisque vitae metus sit amet orci
+                                portitor pellentesque.
+                            </p>
+                            <button class="slider-play-button">PLAY</button>
+                        </div>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="slider-item">
+                        <img src="assets/images/slider-image-3.png"
+                             class="slider-image"
+                             alt="Wiz Khalifa">
+                        <div class="slider-content-wrapper">
+                            <h3 >HELLO! I AM A POP MUSICIAN</h3>
+                            <h1>WIZ KHALIFA</h1>
+                            <p>
+                                Morbi sit amet eros massa. Vestibulum diggrissim varius dictum.
+                                Nunc vehicula sed est vitae elementum. Quisque vitae metus sit amet orci
+                                portitor pellentesque.
+                            </p>
+                            <button class="slider-play-button">PLAY</button>
+                        </div>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="header-nav">
+            <div class="main-grid-container">
+                <div class="header-nav-wrapper">
+                    <nav data-aos="fade-right" data-aos-offset="0" >
+                        <a href="">Podcast</a>
+                        <a href="">Features</a>
+                        <a href="" class="has-dropdown">Pages</a>
+                        <a href="">Contact Us</a>
+                    </nav>
+                    <div data-aos="fade-left"
+                         data-aos-offset="0"
+                         data-aos-delay="500"
+                         class="socials">
+                        <a href="/">
+                            <img src="assets/images/icons/twitter.png"
+                                 alt="twitter"
+                                 target="_blank"
+                                 aria-label="twitter">
+                        </a>
+                        <a href="/">
+                            <img src="assets/images/icons/facebook.png"
+                                 alt="facebook"
+                                 target="_blank"
+                                 aria-label="facebook">
+                        </a>
+                        <a href="/">
+                            <img src="assets/images/icons/instagram.png"
+                                 alt="instagram"
+                                 target="_blank"
+                                 aria-label="instagram">
+                        </a>
+                        <a href="/">
+                            <img src="assets/images/icons/dribbble.png"
+                                 alt="dribbble"
+                                 target="_blank"
+                                 aria-label="dribbble">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".slider").slick({
+                effect:'scroll',
+                vertical: true,
+                verticalSwiping: true,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                touchThreshold: 200,
+                centerMode: false,
+                centerPadding: 0,
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            AOS.init();
+        });
+    </script>
+</body>
+</html>

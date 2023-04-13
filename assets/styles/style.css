@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --color1: #530188FF;
     --color1-hover: #41016c;
@@ -324,7 +327,6 @@ a{
 .slider-play-button:active {
     scale: 0.92;
 }
-
 .slider-play-button:hover {
     background: rgb(2,29,78);
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);

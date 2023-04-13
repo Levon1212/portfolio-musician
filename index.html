@@ -9,8 +9,58 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 </head>
 <body>
+    <!-- Navbar start -->
+    <nav id="nav-bar">
+        <div class="main-grid-container">
+            <div class="navbar-wrapper">
+                <a href="/" aria-label="logo" class="logo-link">
+                    <img src="assets/images/icons/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="navigation">
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> HOMEPAGE
+                    </a>
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> PAGES
+                    </a>
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> MUSIC
+                    </a>
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> FEATURES
+                    </a>
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> PHOTOS
+                    </a>
+                    <a href="#" aria-label="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> BLDO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Header start -->
     <header class="home-header">
-        <button class="settings-button" aria-label="settings button"></button>
+<!--        <button class="settings-button" aria-label="settings button"></button>-->
         <section class="header-slider">
             <section class="slider">
                 <div>
@@ -112,7 +162,91 @@
             </div>
         </section>
     </header>
+    <!-- Header end -->
+    <!-- About Me start -->
+    <!-- About Me end -->
+    <!-- Featured Track start-->
+    <section id="track">
+        <div class="cover-track"></div>
+        <div class="track-info">
+            <img src="assets/images/track.jpg" alt="I'm Your Dreams Just Like" class="track-image">
+            <div class="track-info-wrapper">
+                <h3>I'm Your Dreams Just Like</h3>
+                <p><b>Released:</b> 13/09/2017</p>
+                <p><b>Label:</b> I am the Best, RED</p>
+                <p><b>Format:</b> Digital download, CD</p>
+                <p><b>Certifications:</b> RIAA: Gold</p>
+                <div class="track-socials">
+                    <a href="#" class="social-link-buttons">
+                        <img src="assets/images/icons/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#" class="social-link-buttons">
+                        <img src="assets/images/icons/twitter.png" alt="facebook">
+                    </a>
+                    <a href="#" class="social-link-buttons">
+                        <img src="assets/images/icons/instagram.png" alt="facebook">
+                    </a>
+                    <a href="#" class="social-link-buttons">
+                        <img src="assets/images/icons/dribbble.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-grid-container">
+            <div class="player-container">
+                <div class="music-player music-active-js">
+                    <canvas class="opacity-js" id="myCanvas" width="800" height="400"></canvas>
+                    <audio crossorigin="anonymous" id="myAudio" src=""></audio>
+                    <div class="music-player-element icon-circle-mid">
+                        <img src="https://i.ibb.co/dKbwbMV/circle.png" alt="">
 
+                        <div class="music-name">
+
+                        </div>
+
+                        <div class="next-prev-arrows">
+                            <div class="music-prev">
+                                <img src="https://i.ibb.co/Svgdrz3/music-prev.png" alt="">
+                            </div>
+                            <div class="music-stop">
+                                <img src="https://i.ibb.co/wYdY2jx/music-stop.png" alt="">
+                            </div>
+                            <div class="music-next">
+                                <img src="https://i.ibb.co/Q6fXNGX/music-next.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-player-element icon-play-pause play">
+                        <img src="https://i.ibb.co/MBFjvcj/play.png" alt="">
+                    </div>
+
+<!--                    <div class="music-arrow-left">-->
+<!--                        <img src="https://i.ibb.co/pd4Jgcq/line-left.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="music-arrow-right">-->
+<!--                        <img src="https://i.ibb.co/qBYnqf7/line-right.png" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="video-background">-->
+<!--                        <video muted loop>-->
+<!--                            <source src="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/videos/vid-1.mp4">-->
+<!--                        </video>-->
+<!--                    </div>-->
+                </div>
+                <div class="song-selection">
+                    <!-- <p class="song-select" data-author="Author Name" data-name="Song Name" data-path="path"></p> -->
+                    <p class="song-select" data-author="Stellar Dreams" data-name="Infinity" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/infinity.mp3"></p>
+                    <p class="song-select" data-author="Stellar Dreams" data-name="Parallel" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/parallel.mp3"></p>
+                    <p class="song-select" data-author="AvB Mashup" data-name="Overload Vs We're All We Need" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/avb.mp3"></p>
+                    <p class="song-select" data-author="Bag Raiders" data-name="Shooting Stars" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/stars.mp3"></p>
+                    <p class="song-select" data-author="Max Oazo ft. Camishe" data-name="Supergirl" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/supergirl.mp3"></p>
+                    <p class="song-select" data-author="Kavinsky" data-name="Nightcall" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/nightcall.mp3"></p>
+                    <p class="song-select" data-author="Moby" data-name="JLTF" data-path="https://raw.githubusercontent.com/alekm91/dj/master/src/assets/music/jltf.mp3"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Track end-->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -138,5 +272,6 @@
             AOS.init();
         });
     </script>
+    <script src="scripts/player.js"></script>
 </body>
 </html>

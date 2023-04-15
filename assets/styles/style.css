@@ -208,6 +208,7 @@ a{
     background-repeat: no-repeat;
     background-size:auto 100%;
     background-position: center right;
+    height: 60px;
 }
 .header-nav-wrapper nav a{
     display: flex;
@@ -247,6 +248,9 @@ a{
 }
 .socials a{
     margin-left: 30px;
+}
+.socials a img{
+    width: 15px;
 }
 .home-header{
     display: flex;

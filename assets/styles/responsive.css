@@ -178,3 +178,9 @@
     }
     /* Gallery end */
 }
+@media only screen and (max-width: 570px) {
+    .get-in-touch-form input{
+        /*grid-template-columns: repeat(1,1fr);*/
+        grid-column: span 2;
+    }
+}

@@ -350,14 +350,16 @@
                     Beatae commodi dolore expedita illo, illum molestiae nisi
                     omnis quis quo repellendus? Accusamus animi asperiores cum
                 </p>
-                <div class="get-in-touch-form">
-                    <input type="text" name="name" placeholder="Full Name *">
-                    <input type="email" name="email" placeholder="Your Email Address *">
-                    <textarea placeholder="Describe yourself here..."></textarea>
+                <form id="get-in-touch-form" class="get-in-touch-form">
+                    <input type="text" id="name" placeholder="Full Name *">
+                    <input type="email" id="email" placeholder="Your Email Address *">
+                    <textarea id='message' placeholder="Describe yourself here..."></textarea>
                     <div class="button-container">
-                        <button class="submit-button">Submit now</button>
+                        <button type="submit" id="submit" class="submit-button">Submit now</button>
                     </div>
-                </div>
+                    <p id="success-text">Your message has been sent successfully</p>
+                </form>
+
             </div>
         </div>
     </section>
@@ -417,6 +419,34 @@
     </script>
     <script src="scripts/about.js"></script>
     <script src="scripts/player.js"></script>
+    <script>
+        const form = document.querySelector('#get-in-touch-form');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const message = document.querySelector('#message').value;
+
+            const url = 'https://script.google.com/macros/s/AKfycbzk3lI5pj70zUSVwnZROXiHOUf74xI2GA-03sncw9kRPlQr225GQblBI4Yb3AcErD3XCQ/exec';
+
+            try {
+                const response = await fetch(`${url}?name=${name}&email=${email}&message=${message}`);
+                const text = await response.text();
+                console.log(text);
+                const result = JSON.parse(text);
+                if(result.success){
+                 document.getElementById('name').style.display = 'none'
+                 document.getElementById('email').style.display = 'none'
+                 document.getElementById('message').style.display = 'none'
+                 document.getElementById('submit').style.display = 'none'
+                 document.getElementById('success-text').style.display = 'block'
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
     <script>
         function downloadFile() {
             var url = '/assets/mp3/song1.mp3';

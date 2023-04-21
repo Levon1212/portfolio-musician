@@ -809,6 +809,15 @@ a{
     background-attachment: fixed;
     position: relative;
 }
+#success-text{
+    display: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Roboto-Regular,sans-serif;
+    grid-column: span 2;
+}
 #get-in-touch .cover{
     position: absolute;
     top: 0;

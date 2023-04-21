@@ -1,9 +1,9 @@
 const images = [
-    "assets/images/about/image3.jpeg",
-    "assets/images/about/image4.jpeg",
-    "assets/images/about/image5.jpeg",
-    "assets/images/about/image1.jpeg",
-    "assets/images/about/image2.jpeg",
+    "assets/images/about/image3.png",
+    "assets/images/about/image4.png",
+    "assets/images/about/image5.png",
+    "assets/images/about/image1.png",
+    "assets/images/about/image2.png",
 ];
 
 let currentImageIndex = 0;

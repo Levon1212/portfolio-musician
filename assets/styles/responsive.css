@@ -13,6 +13,28 @@
     }
 }
 @media only screen and (max-width: 1100px) {
+    .container {
+        justify-content: center;
+    }
+    .slider-content-wrapper h1{
+        font-size: 20vw;
+    }
+    .about-popup-wrapper{
+        padding: 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .about-popup-wrapper p{
+        padding-right: 0;
+        width: 100%;
+    }
+    .about-popup-wrapper img{
+        display: none;
+    }
+    .get-in-touch-form select{
+        grid-column: span 2;
+        height: 50px;
+    }
     /* Hamburger start */
     .hamburger {
         cursor: pointer;
@@ -61,7 +83,7 @@
         top: 0;
         left: -100%;
         transition: 0.4s;
-        background-color: rgba(23, 26, 59, 0.84);
+        background-color: #e6cfb0;
     }
     #nav-bar.active{
         left: 0;
@@ -144,7 +166,7 @@
     }
     #about-me .images-wrapper{
         width: 90%;
-        height: unset;
+        height: 70vh;
     }
     .about-info-wrapper{
         width: 100%;
@@ -172,6 +194,23 @@
     }
     /* Track end */
     /* Gallery start */
+    .gallery-items-wrapper{
+        height: 1900px;
+        overflow: hidden;
+    }
+    .gallery-button{
+        display: flex;
+        width: 80vw;
+        background-color: #D07E78;
+        color: white;
+        font-family: Raleway,sans-serif;
+        height: 50px;
+        margin: 40px auto;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
     .gallery-items-wrapper{
         padding: 60px 20px;
         grid-template-columns: repeat(1,1fr);

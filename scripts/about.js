@@ -14,3 +14,15 @@ setInterval(() => {
     const newImageUrl = images[currentImageIndex];
     imageElement.src = newImageUrl;
 }, 700);
+
+function openAboutPopup(){
+    document.getElementById('about-me-popup').style.left = '0'
+}
+function closeAboutPopup(){
+    document.getElementById('about-me-popup').style.left = '-100%'
+}
+
+function showMoreGallery() {
+    document.querySelector('.gallery-items-wrapper').style.height = 'unset'
+    document.querySelector('.gallery-button').style.display = 'none'
+}

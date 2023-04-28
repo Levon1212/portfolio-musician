@@ -13,6 +13,16 @@
     }
 }
 @media only screen and (max-width: 1100px) {
+    .music-wrapper{
+        padding: 20px;
+    }
+    #track{
+        min-height: 60vh;
+    }
+    #track iframe{
+        width: 95%;
+        height: calc(95% - 20px);
+    }
     .container {
         justify-content: center;
     }
@@ -170,6 +180,7 @@
     }
     .about-info-wrapper{
         width: 100%;
+        padding: 20px;
     }
     /* About end */
     /* Track start */
